@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  justify-content: flex-start;
+  padding: 4rem 1rem;
+}
+
+.form-box {
+  max-width: 30%;
+  flex: 0 0 30%;
+}
+
+.form-box h3 {
+  text-transform: capitalize;
+  color: #ddd;
+}
+
+.form-box {
+}
+
+.form-box button,
+.form-box input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 0.8em;
+  border: 1.5px solid #cccccc;
+  transition: all 0.2s ease;
+}
+
+.form-box button {
+  cursor: pointer;
+}
+
+.posts-items {
+  max-width: 70%;
+  flex: 0 0 70%;
+  padding: 5px;
+}
+.posts-items .item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.posts-items .item h4 {
+  margin-top: 0;
+}
+.btns {}
