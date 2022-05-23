@@ -4,6 +4,4 @@
 /node_modules
 
 /redux-app/node_modules
-
-# production
-/build
+redux-app/node_modules
