@@ -3,5 +3,5 @@
 # dependencies
 /node_modules
 
-/redux-app/node_modules
-redux-app/node_modules
+/redux-app/node_modules/
+redux-app/node_modules/
