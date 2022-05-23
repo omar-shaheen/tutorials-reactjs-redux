@@ -1,20 +1,17 @@
 import "./posts.css";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addPost, deletePost, updatePost } from "../redux/postsSlice";
+import { addPost, deletePost } from "../redux/postsSlice";
 
 export default function Posts() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   // console.log(title, desc);
 
-  const [updatedTitle, setUpdatedTitle] = useState("");
-  const [updatedDesc, setUpdatedDesc] = useState("");
-
   const posts = useSelector((state) => state.posts.items);
 
   const [isEdit, setIsEdit] = useState(false);
-  const [id, setId] = useState(null);
+  const [id, setId] = useState(null)
 
   const dispatch = useDispatch();
 
@@ -54,14 +51,10 @@ export default function Posts() {
                 <h4>{post.title}</h4>
                 <p>{post.desc}</p>
                 <div className="btns">
-                  <button
-                    onClick={() => {
-                      setIsEdit(true);
-                      setId(post.id);
-                    }}
-                  >
-                    Edit
-                  </button>
+                  <button onClick={() => {
+                    setIsEdit(true)
+                    setId(post.id)
+                  }}>Edit</button>
                   <button onClick={() => dispatch(deletePost(post.id))}>
                     Delete
                   </button>
@@ -71,30 +64,9 @@ export default function Posts() {
 
                 {isEdit && id == post.id && (
                   <>
-                    <input
-                      type="text"
-                      placeholder="Upadted Title"
-                      onChange={(e) => setUpdatedTitle(e.target.value)}
-                    />
-                    <input
-                      type="text"
-                      placeholder="Upadted Desc"
-                      onChange={(e) => setUpdatedDesc(e.target.value)}
-                    />
-                    <button
-                      onClick={() => {
-                        dispatch(
-                          updatePost({
-                            id: post.id,
-                            title: updatedTitle,
-                            desc: updatedDesc,
-                          })
-                        );
-                        setIsEdit(false)
-                      }}
-                    >
-                      Update
-                    </button>
+                    <input type="text" placeholder="Upadted Title" />
+                    <input type="text" placeholder="Upadted Desc" />
+                    <button>Update</button>
                   </>
                 )}
               </div>
