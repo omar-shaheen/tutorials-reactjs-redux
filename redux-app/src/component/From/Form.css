@@ -30,6 +30,7 @@
   border: 1.5px solid #cccccc;
   transition: all 0.2s ease;
 }
+
 .form-box form button {
   cursor: pointer;
 }

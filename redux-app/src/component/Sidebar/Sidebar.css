@@ -9,12 +9,14 @@ ul li {
   padding: 1rem .5rem;
   border-bottom: 1px solid #34495e;
 }
+
 ul li a {
   color: #fff;
   text-transform: capitalize;
   display: block;
   font-weight: 500;
 }
+
 ul li a.active,
 ul li a:hover {
   color: #d35400;
