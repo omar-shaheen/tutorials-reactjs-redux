@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { addUser } from "../../redux/userSlice";
 import "./Form.css";
 
-export default function Form(props) {
+export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    addUser({ name, email });
+    dispatch(addUser({ name, email }));
   };
 
   return (
