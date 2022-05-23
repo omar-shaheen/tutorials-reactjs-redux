@@ -1,0 +1,19 @@
+Content:
+
+- Lifecycle Methods => processing => Done
+
+- Keyfragment => processing => Done
+
+- Pure Component  = processing => Done
+
+- HOC - Render Props  => Higher Order Component  => processing => Done
+
+- Render Props  => processing => Done
+
+- Refs - Callback Refs  => processing => Done
+
+- Context API   => processing =>  Done
+
+- React Router Dom - Route Params - Query String  =>
+
+- Axois [ Get - post ] requests  =>
